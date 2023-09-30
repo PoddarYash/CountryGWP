@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CountryGWP.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("server")]
     public class CountryGwpController : ControllerBase
     {
         private readonly IGWPRepository _gwpRepository;
