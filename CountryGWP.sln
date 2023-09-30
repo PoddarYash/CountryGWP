@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryGWP.API", "CountryGWP.API\CountryGWP.API.csproj", "{F5DB8695-A097-4CCF-8DAD-71F2EF39B10F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryGWP.Test", "CountryGWP.Test\CountryGWP.Test.csproj", "{D44EB03D-CD11-45E4-91A0-D966AF318813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F5DB8695-A097-4CCF-8DAD-71F2EF39B10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5DB8695-A097-4CCF-8DAD-71F2EF39B10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5DB8695-A097-4CCF-8DAD-71F2EF39B10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44EB03D-CD11-45E4-91A0-D966AF318813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44EB03D-CD11-45E4-91A0-D966AF318813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44EB03D-CD11-45E4-91A0-D966AF318813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44EB03D-CD11-45E4-91A0-D966AF318813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

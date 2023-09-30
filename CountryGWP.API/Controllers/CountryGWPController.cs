@@ -20,7 +20,7 @@ namespace CountryGWP.API.Controllers
         {
             try
             {
-                var result = await _gwpRepository.GetAverageGwpAsync(request.Country, request.Lob);
+                var result = await _gwpRepository.CalculateAverageGwpAsync(request.Country, request.Lobs.Distinct().ToList());
                 return Ok(result);
             }
             catch (Exception ex)

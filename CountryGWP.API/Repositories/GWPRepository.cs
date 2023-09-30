@@ -16,8 +16,14 @@ namespace CountryGWP.API.Repositories
             _DbContext = dbContext;
         }
 
-        public async Task<Dictionary<string, decimal>> GetAverageGwpAsync(string country, List<string> lobs)
+        public async Task<Dictionary<string, decimal>> CalculateAverageGwpAsync(string country, List<string> lobs)
         {
+            if (string.IsNullOrWhiteSpace(country))
+                throw new ArgumentNullException(nameof(country));
+
+            if (lobs == null || lobs.Count == 0 || lobs.All(_ => string.IsNullOrWhiteSpace(_)))
+                throw new ArgumentNullException(nameof(lobs));
+
             var results = new Dictionary<string, decimal>();
 
             foreach(var lob in lobs)
